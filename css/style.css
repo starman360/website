@@ -8,10 +8,19 @@ body{margin:0;background-color:;}
     text-align:center;
     width:100%;
     height:100px;
-    background-color:GRAY;
+    /*background-color:GRAY;*/
 }
 
 .link{
     background-color:RED;
-    height:100px;
+    height:80px;
+    margin: 10px 0px;
+	border-radius: 10px;
+}
+
+.wiggle_over_hover:hover {-webkit-animation:wiggle 1s 1;}
+@-webkit-keyframes wiggle{
+	0% {-webkit-transform:translateY(10px);}
+	33% {-webkit-transform:translateY(-20px);}
+	66% {-webkit-transform:translateY(10px);}
 }
