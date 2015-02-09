@@ -14,16 +14,51 @@ body{margin:0;}
 }
 
 .link{
-    background-color:RED;
+    /*background-color:RED;*/
+    background-color:rgba(0,0,0,1);
     margin: 10px 0px;
 	border-radius: 10px;
+	transition: all 0.2s ease;
+	background: linear-gradient(
+     rgba(255,255,255,0.25), rgba(255,255,255,0.25) 50%, #333 50%, #333
+    );
+    background-size: 100% 202%;
+}
+.link:hover{
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+}
+
+.link p {
+    font-size:50px;
+    text-align:center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#000;
+}
+
+.link:hover p {
+    color:#48ad26;
+}
+
+@keyframes up-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 1.5em; }
+  100% { padding-top: 2em; }
 }
 
 .wiggle_over_hover:hover {-webkit-animation:wiggle 1s 1;}
 @-webkit-keyframes wiggle{
-	0% {-webkit-transform:translateY(10px);}
-	33% {-webkit-transform:translateY(-20px);}
-	66% {-webkit-transform:translateY(10px);}
+	0% {-webkit-transform:translateY(3px);
+	    /*-webkit-opacity:0.25;*/
+	}
+	33% {-webkit-transform:translateY(-6px);
+	    /*-webkit-opacity:0.62;*/
+	}
+	66% {-webkit-transform:translateY(3px);
+	    /*-webkit-opacity:1.0;*/
+	}
 }
 
 /*----------------HOME---------------*/
