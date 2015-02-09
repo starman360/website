@@ -1,6 +1,7 @@
-body{margin:0;background-color:;}
+body{margin:0;}
 
 #wrapper{
+    position:absolute;
 	height:100%;
 }
 
@@ -28,15 +29,15 @@ body{margin:0;background-color:;}
 /*----------------HOME---------------*/
 
 #Home{
-    background-image: url("images/Dunes.jpg");
+    background: url("../images/Dunes.jpg") no-repeat center bottom fixed;
 }
 
 #About{
-    background-image: url("images/Lights.jpg");
+    background: url("../images/Lights.jpg") no-repeat center bottom fixed;
 }
 
 .Page{
-    height: 1000px;
+    height: 100%;
 }
 
 h1 {
