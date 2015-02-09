@@ -28,8 +28,17 @@ body{margin:0;background-color:;}
 /*----------------HOME---------------*/
 
 #Home{
-	height: 1000px;
+    background-image: url("images/Dunes.jpg");
 }
+
+#About{
+    background-image: url("images/Lights.jpg");
+}
+
+.Page{
+    height: 1000px;
+}
+
 h1 {
     color:BLUE;
 }
