@@ -100,6 +100,11 @@ navi p:hover {
     margin: 0 15px;
 }
 
+/*ANIMATION TIME*/
+
+ul{
+    list-style-type: none;
+}
 .cb-slideshow,
 .cb-slideshow:after { 
     position: fixed;
