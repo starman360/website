@@ -25,7 +25,7 @@ body {
     height:100vh;
     width: 100%;
     padding: 0px;
-    background: url("../images/Dunes_BG1.jpg") no-repeat center bottom fixed;
+    background: url("../images/Dunes_BG2.jpg") no-repeat center bottom fixed;
     background-size: 100%;
 }
 
@@ -58,8 +58,8 @@ navi {
 }
 
 .holder {
-    width: 400px;
     margin: 0 auto;
+    height: 100%
 }
 
 navi navi {

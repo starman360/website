@@ -6351,10 +6351,13 @@ button.close {
 }
 
 @media (max-width: 700px) {
-  .col-stuck {position: fixed; left:150px;}
+  .col-stuck {float: clear;}
+  .holder {width: 200px;}
+  /*.col-stuck {position: fixed; left:150px;}*/
 }
 @media (min-width: 700px) {
   .col-stuck {margin:0 auto;}
+  .holder {width: 400px;}
 }
 
 
