@@ -6350,5 +6350,12 @@ button.close {
     .full-width{width: 200%;}
 }
 
+@media (max-width: 700px) {
+  .col-stuck {position: fixed; left:150px;}
+}
+@media (min-width: 700px) {
+  .col-stuck {margin:0 auto;}
+}
+
 
 /*# sourceMappingURL=bootstrap.css.map */

@@ -1,82 +1,102 @@
-body{margin:0;
-/*font-family:'Josefin Slab',serif;*/
+@font-face {
+    font-family: Halo;
+    src: url("../fonts/Halo-sans.otf") format("opentype");
+}
+@font-face {
+    font-family: Halo;
+    font-weight: bold;
+    src: url("../fonts/Halo-sans-black.otf") format("opentype");
+}
+@font-face {
+    font-family: Halo;
+    font-weight: thin;
+    src: url("../fonts/Halo-sans-light.otf") format("opentype");
 }
 
-#wrapper{
-    position:absolute;
-	height:100%;
+
+body {
+    min-width: 600px;
+    font-family: Halo, Helvetica;
+    /*font-family:'Josefin Slab',serif;*/
+    background-color: rgb(211,231,255);
 }
 
-
-#nav{
-	position: fixed;
-    text-align:center;
+#wrapper {
+    margin: 0;
+    height:100vh;
     width: 100%;
-    /*background-color:GRAY;*/
+    padding: 0px;
+    background: url("../images/Dunes_BG1.jpg") no-repeat center bottom fixed;
+    background-size: 100%;
 }
 
-.link{
-    /*background-color:RED;*/
-    background-color:rgba(0,0,0,1);
-    margin: 10px 0px;
-	border-radius: 10px;
-	transition: all 0.2s ease;
-	background: linear-gradient(
-     rgba(255,255,255,0.25), rgba(255,255,255,0.25) 50%, #333 50%, #333
-    );
-    background-size: 100% 202%;
-}
-.link:hover{
-    background-position: 100% 100%;
-    animation: up-bump 0.4s ease;
+#nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    vertical-align: middle;
+    
 }
 
-.link p {
-    font-size:50px;
-    text-align:center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    color:#000;
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    background: url("../images/Baja_logo.png") no-repeat center bottom;
+    background-size: 100px auto;
+}
+/*Definition of <navi>*/
+
+navi {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 
-.link:hover p {
-    color:#48ad26;
+.holder {
+    width: 400px;
+    margin: 0 auto;
 }
 
-@keyframes up-bump {
-  0% { padding-top: 2em; }
-  50% { padding-top: 1.5em; }
-  100% { padding-top: 2em; }
+navi navi {
+    height: 40px;
+    float: left;
+    margin: 20px 0px;
+    vertical-align: middle;
+    padding: 0px;
 }
 
-.wiggle_over_hover:hover {-webkit-animation:wiggle 1s 1;}
-@-webkit-keyframes wiggle{
-	0% {-webkit-transform:translateY(3px);
-	    /*-webkit-opacity:0.25;*/
-	}
-	33% {-webkit-transform:translateY(-6px);
-	    /*-webkit-opacity:0.62;*/
-	}
-	66% {-webkit-transform:translateY(3px);
-	    /*-webkit-opacity:1.0;*/
-	}
+navi .col-xs-4{
+    padding: 0px;
 }
 
-/*----------------HOME---------------*/
-
-#Home{
-    background: url("../images/Dunes.jpg") no-repeat center bottom fixed;
-}
-
-#About{
-    background: url("../images/Lights.jpg") no-repeat center bottom fixed;
-}
-
-.Page{
+navi p {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border-radius: 10px;
     height: 100%;
+    margin: 0px 5px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-h1 {
-    color:BLUE;
+navi p:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.theteam_nav {
+    margin: 0 15px;
+}
+
+.gallery_nav {
+    margin: 0 15px;
 }
