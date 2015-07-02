@@ -70,13 +70,13 @@ navi navi {
     padding: 0px;
 }
 
-navi .col-xs-4{
+navi .col-xs-12{
     padding: 0px;
 }
 
 navi p {
     background-color: black;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.15);
     color: black;
     border-radius: 10px;
     height: 100%;
@@ -88,7 +88,7 @@ navi p {
 }
 
 navi p:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.45);
     color: white;
 }
 
