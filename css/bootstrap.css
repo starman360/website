@@ -6359,13 +6359,13 @@ button.close {
   .col-stuck {margin:0 auto;}
   .holder {width: 400px;}
 }
-
-@media (min-width: 440px) {
-    .holder {margin-left:150px;
+@media (max-width: 440px) {
+    .holder {margin-left:111px;}
 }
-@media (max-width: 400px) {
+@media (min-width: 440px) {
     .holder {margin:0 auto;}
 }
+
 
 @media (max-width: 768px) {
     #foot{width:100%;}
