@@ -20,7 +20,8 @@
 </head>
 
 <body>
-    <ul class="cb-slideshow">
+	<!-- Backgrounds -->
+    <ul class="active cb-slideshow">
         <li><span></span></li>
         <li><span></span></li>
         <li><span></span></li>
@@ -28,32 +29,48 @@
         <li><span></span></li>
         <li><span></span></li>
     </ul>
+    <!-- END Backgrounds -->
     <div id="wrapper" class="container">
+    	<!-- Navigation -->
         <div id="nav">
-            <a href="index.html">
+            <a href="javascript:history.go(0)">
                 <div class="logo">
                 </div>
             </a>
             <navi class="holder col-stuck">
-                <a href="theteam.html">
+                <a class="" href="#theteam">
                     <navi class="col-xs-12 col-sm-4">
                         <p class="theteam_nav">The Team</p>
                     </navi>
                 </a>
-                <a href="gallery.html">
+                <a class="" href="#gallery">
                     <navi class="col-xs-12 col-sm-4">
                         <p class="gallery_nav">Gallery</p>
                     </navi>
                 </a>
-                <a href="sponsorship.html">
+                <a class="" href="#sponsorship">
                     <navi class="col-xs-12 col-sm-4">
                         <p class="sponsorship">Sponsorship</p>
                     </navi>
                 </a>
             </navi>
         </div>
-        &nbsp;
+        <!-- END Navigation -->
+        <!-- Content -->
+        <div id="content">
+        	<div id="theteam" class="tab">
+        		&nbsp;
+        	</div>
+        	<div id="gallery" class="tab">
+        		&nbsp;
+        	</div>
+        	<div id="sponsorship" class="tab">
+        		&nbsp;
+        	</div>
+        </div>
+        <!-- END Content -->
     </div>
+    <!-- Footer -->
     <footer>
         <div id="foot">
             <a href="">
@@ -78,8 +95,10 @@
             </a>
         </div>
     </footer>
+    <!-- END Footer -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/tabs.js"></script>
     <!--Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -6359,25 +6359,34 @@ button.close {
   .col-stuck {margin:0 auto;}
   .holder {width: 400px;}
 }
-@media (max-width: 440px) {
-    .holder {margin-left:111px;}
+@media (max-width: 457px) {
+    .holder {position: fixed; left: 111px;}
 }
-@media (min-width: 440px) {
+@media (min-width: 457px) {
     .holder {margin:0 auto;}
 }
 
 
-@media (max-width: 768px) {
-    #foot{width:100%;}
-    #foot a:nth-child(1) navi{background: url("../Sponsorship/Solidworks.png") center bottom no-repeat;background-size: auto 100%;}
-    #foot a:nth-child(2) navi{background: url("../Sponsorship/National_Instruments.png") center bottom no-repeat;background-size: auto 100%;}
-    .cb-slideshow li span {height: calc(100% - 80px);}
-}
-@media (min-width: 768px) {
+
+  #foot {width:100%;}
+  #foot a:nth-child(1) navi {background: url("../Sponsorship/Solidworks.png") center bottom no-repeat;background-size: auto 100%;}
+  #foot a:nth-child(2) navi {background: url("../Sponsorship/National_Instruments.png") center bottom no-repeat;background-size: auto 100%;}
+  .cb-slideshow li span {height: calc(100% - 80px);}
+  #content {margin: 0 auto;margin-top: 250px;}
+
+@media (min-width: 768px) { /* When size > 768px */
     #foot{max-width:768px;}
     #foot a:nth-child(1) navi{background: url("../Sponsorship/Solidworks.png") center bottom no-repeat;background-size: 100% auto;}
     #foot a:nth-child(2) navi{background: url("../Sponsorship/National_Instruments.png") center bottom no-repeat;background-size: 100% auto;}
     .cb-slideshow li span {height: calc(100% - 40px);}
+    #content{margin: 0 auto;margin-top: 100px;}
 }
-    
+
+#content{
+    width: 100%;
+ }
+@media (min-width: 1200px) { /* When size > 1200px */
+    #content{width: 1200px;}
+}    
+
 /*# sourceMappingURL=bootstrap.css.map */
