@@ -6357,7 +6357,7 @@ button.close {
 }
 @media (min-width: 700px) {
   .col-stuck {margin:0 auto;}
-  .holder {width: 400px;}
+  .holder {width: 800px;}
 }
 @media (max-width: 457px) {
     .holder {position: fixed; left: 111px;}
@@ -6387,6 +6387,6 @@ button.close {
  }
 @media (min-width: 1200px) { /* When size > 1200px */
     #content{width: 1200px;}
-}    
+}
 
 /*# sourceMappingURL=bootstrap.css.map */
