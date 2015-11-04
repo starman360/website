@@ -6350,20 +6350,25 @@ button.close {
     .full-width{width: 200%;}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
   .col-stuck {float: clear;}
-  .holder {width: 200px;}
+  .holder {width: 100%;}
   /*.col-stuck {position: fixed; left:150px;}*/
 }
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
   .col-stuck {margin:0 auto;}
-  .holder {width: 800px;}
+  .holder {width: 1200px;}
 }
 @media (max-width: 457px) {
-    .holder {position: fixed; left: 111px;}
+    .holder {position: fixed;}
+    #nav ul li{margin-top:5px;margin-bottom:5px;}
+    #nav ul li:nth-of-type(1) {display: block; margin:80px 0px; margin-top:30px;}
+    #nav ul li:nth-of-type(5) {display: none;}
 }
 @media (min-width: 457px) {
     .holder {margin:0 auto;}
+    #nav ul li:nth-of-type(1) {display: none;}
+    #nav ul li:nth-of-type(5) {display: block;}
 }
 
 

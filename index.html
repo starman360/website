@@ -9,8 +9,8 @@
     <link rel="shortcut icon" type="image/png" href="images/Baja_logo.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,88 +33,89 @@
     <div id="wrapper" class="container">
         <!-- Navigation -->
         <div id="nav">
-            <a href="javascript:history.go(0)">
-                <!--Refreshes the page-->
-                <div class="logo">
-                </div>
-            </a>
             <ul class="holder col-stuck">
-                <li class="col-xs-12 col-sm-2">
-                    <a class="" href="#about">
+                <li id="logo" class="col-xs-12 col-sm-2">
+                    <a href="javascript:history.go(0)">
+                        <!--Refreshes the page-->
+                        <div class="logo">
+                        </div>
+                    </a>
+                </li>
+                <li class="col-xs-12 col-sm-1">
+                    <a onclick="scrollAbout()" href="#about">
                         <p>About</p>
                     </a>
                 </li>
                 <li class="col-xs-12 col-sm-2">
-                    <a class="" href="#about">
+                    <a onclick="scrollTheTeam()" href="#about">
                         <p>The Team</p>
                     </a>
                     <ul class="dropdown">
                         <li class="col-xs-12">
-                            <a class="" href="#about">
+                            <a onclick="scrollEBoard()" href="#about">
                                 <p>Executive Board</p>
                             </a>
                         </li>
                         <li class="col-xs-12">
-                            <a class="" href="#about">
+                            <a onclick="scrollDTeam()" href="#about">
                                 <p>Design Team</p>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="col-xs-12 col-sm-2">
-                    <a class="" href="#about">
+                <li class="col-xs-12 col-sm-1">
+                    <a onclick="scrollGallery()" href="#about">
                         <p>Gallery</p>
                     </a>
                     <ul class="dropdown">
                         <li class="col-xs-12">
-                            <a class="" href="#about">
+                            <a onclick="scrollPhotos()" href="#about">
                                 <p>Photos</p>
                             </a>
                         </li>
                         <li class="col-xs-12">
-                            <a class="" href="#about">
+                            <a onclick="scrollVideos()" href="#about">
                                 <p>Videos</p>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="col-xs-12 col-sm-3">
-                    <a class="" href="#about">
+                <li id="logo" class="col-xs-12 col-sm-2">
+                    <a href="javascript:history.go(0)">
+                        <!--Refreshes the page-->
+                        <div class="logo">
+                        </div>
+                    </a>
+                </li>
+                <li class="col-xs-12 col-sm-2">
+                    <a onclick="scrollSponsor()" href="#about">
                         <p>Sponsorship</p>
                     </a>
                 </li>
                 <li class="col-xs-12 col-sm-2">
-                    <a class="" href="#about">
+                    <a onclick="scrollDonate    ()" href="#about">
                         <p>Donate</p>
                     </a>
                 </li>
-                <div id="menu"></div>
+            </ul>
+        <div id="menu"></div>
         </div>
         <page class="pages">&nbsp;</page>
-        <div class="bar">&nbsp; HI!</div>
+        <div class="bar">&nbsp; </div>
+        <page class="pages">
+            <div class="container">
+                <div class="col-xs-12 col-md-6">
+                    <p>About</p>
+                    <p>Usually the first word that people think of when sustainable energy is brought up is solar panels. The problem is that Solar panels aren't the most efficient source in the world to collect energy. Studies conducted by universities and researchers have shown that Solar Panels only absorb 15% of the total potential energy they could possibly absorb. With this amount of inefficiency, shouldn't consumers have a choice to say where their money goes? The average set of solar Panels cost approximately 40k and last for 20Years. With our database and data collection, we have seen that many users that switch to harnessing wind energy will save around 10k for the same 20 Years.</p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    
+                </div>
+            </div>
+        </page>
         <page class="pages">&nbsp;</page>
-        <div class="bar">&nbsp;</div>
         <page class="pages">&nbsp;</page>
         <!-- END Navigation -->
-        <!-- Content -->
-        <div id="content">
-            <div id="about" class="tab">
-                &nbsp;
-            </div>
-            <div id="theteam" class="tab">
-                &nbsp;
-            </div>
-            <div id="gallery" class="tab">
-                &nbsp;
-            </div>
-            <div id="sponsorship" class="tab">
-                &nbsp;
-            </div>
-            <div id="donate" class="tab">
-                &nbsp;
-            </div>
-        </div>
-        <!-- END Content -->
     </div>
     <!-- Footer -->
     <footer>

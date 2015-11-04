@@ -13,3 +13,12 @@ jQuery(document).ready(function() {
         e.preventDefault();
     });
 });
+function scrollAbout() {
+    window.scrollTo(0, 1200);
+}
+function scrollGraph() {
+    window.scrollTo(0, 3200);
+}
+function scrollMaps() {
+    window.scrollTo(0,2200);
+}
